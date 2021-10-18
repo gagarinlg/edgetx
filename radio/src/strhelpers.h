@@ -59,11 +59,11 @@ char *getSourceString(char *dest, mixsrc_t idx);
 
 char *getFlightModeString(char *dest, int8_t idx);
 #define SWITCH_WARNING_STR_SIZE 3
-char *getSwitchWarningString(char *dest, swsrc_t idx);
+// char *getSwitchWarningString(char *dest, swsrc_t idx);
 
 char *getSourceString(mixsrc_t idx);
 char *getSwitchPositionName(swsrc_t idx);
-char *getSwitchWarningString(swsrc_t idx);
+// char *getSwitchWarningString(swsrc_t idx);
 char *getCurveString(int idx);
 char *getTimerString(int32_t tme, uint8_t hours);
 char *getTimerString(int32_t tme, uint8_t hours, bool bLowercase);

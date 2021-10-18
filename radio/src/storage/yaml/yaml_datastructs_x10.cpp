@@ -115,6 +115,8 @@ const struct YamlIdStr enum_MixSources[] = {
   {  MIXSRC_S2, "S2"  },
   {  MIXSRC_EXT1, "EXT1"  },
   {  MIXSRC_EXT2, "EXT2"  },
+  {  MIXSRC_EXT3, "EXT3"  },
+  {  MIXSRC_EXT4, "EXT4"  },
   {  MIXSRC_LS, "LS"  },
   {  MIXSRC_RS, "RS"  },
   {  MIXSRC_MOUSE1, "MOUSE1"  },

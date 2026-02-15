@@ -45,6 +45,37 @@ EdgeTX is the cutting edge of OpenTX. It is the place where innovative ideas and
 
 - [Development Wiki](https://github.com/EdgeTX/edgetx/wiki) - [Docker Build Environment](https://github.com/EdgeTX/build-edgetx)
 
+## Developer Documentation
+
+Comprehensive documentation for developers and contributors:
+
+### Getting Started
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - System architecture and design overview
+- **[BUILD.md](BUILD.md)** - Complete build instructions for firmware, companion, and simulator
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Development workflow, coding standards, and PR guidelines
+
+### Development Guides
+- **[DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md)** - Code structure, debugging techniques, and testing
+- **[API_REFERENCE.md](API_REFERENCE.md)** - API documentation for major subsystems
+- **[HARDWARE_SUPPORT.md](HARDWARE_SUPPORT.md)** - Guide for adding new radio hardware support
+
+### Quick Start for Developers
+
+```bash
+# Clone repository
+git clone --recursive https://github.com/EdgeTX/edgetx.git
+cd edgetx
+
+# Build firmware (using Docker - recommended)
+docker pull ghcr.io/edgetx/build-edgetx:main
+docker run --rm -v $(pwd):/src ghcr.io/edgetx/build-edgetx:main
+
+# Or build locally (see BUILD.md for detailed instructions)
+cmake --preset default
+cmake --build build-default --target firmware-X10
+```
+
+For detailed build instructions, see [BUILD.md](BUILD.md).
 
 ## Acknowledgements
 Some icon assets provided by [ICONS8](https://icons8.com).</br>
